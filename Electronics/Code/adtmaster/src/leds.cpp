@@ -4,10 +4,21 @@ void setupLEDs()
 {
 
     FastLED.addLeds<WS2812B, WSLED, COLOR_ORDER>(leds, NUM_LEDS).setCorrection(TypicalLEDStrip);
-    FastLED.setBrightness(50);
+    FastLED.setBrightness(1);
     FastLED.clear();
     FastLED.show();
 
+}
+
+
+void colorDebugLed(){
+    fill_solid(leds, NUM_LEDS, ColorConverter("Red"));
+    FastLED.show();
+}
+
+void debugLedOff(){
+    FastLED.clear();
+    FastLED.show();
 }
 
 CRGB ColorConverter(String colorConvert)
