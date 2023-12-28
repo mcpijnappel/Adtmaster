@@ -8,8 +8,8 @@
 
 void setupLEDs();
 
-void colorDebugLed();
+void colorDebugLed(String color);
 void debugLedOff();
 
-CRGB leds[NUM_LEDS];
+
 CRGB ColorConverter(String colorConvert);

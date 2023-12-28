@@ -1,5 +1,5 @@
 #include "leds.h"
-
+CRGB leds[NUM_LEDS];
 void setupLEDs()
 {
 
@@ -11,8 +11,8 @@ void setupLEDs()
 }
 
 
-void colorDebugLed(){
-    fill_solid(leds, NUM_LEDS, ColorConverter("Red"));
+void colorDebugLed(String color){
+    fill_solid(leds, NUM_LEDS, ColorConverter(color));
     FastLED.show();
 }
 

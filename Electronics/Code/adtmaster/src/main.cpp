@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include "general.h"
-
+#include "leds.h"
 
 void setup()
 {
@@ -9,6 +9,11 @@ void setup()
 
 void loop()
 {
+
+  colorDebugLed("Red");
+  delay(1000);
+  debugLedOff();
+  delay(1000);
 
 }
 
