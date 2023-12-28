@@ -19,9 +19,7 @@
 
 // LEDs 2812
 #define WSLED 47
-#define LED_TYPE WS2812B
-#define COLOR_ORDER GRB
-#define NUM_LEDS 1
+
 
 
 
