@@ -1,3 +1,5 @@
+#pragma once 
+
 // SD card
 
 // Screen
