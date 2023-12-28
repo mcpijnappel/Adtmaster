@@ -1,0 +1,11 @@
+# Features
+- Beer relay mode
+  - Mesh
+    - EPSNOW
+    - painlesmesh
+    - ble mesh
+- Empty bottle detection
+- Ranking
+- GUI
+- Animation
+- NFC Identification
