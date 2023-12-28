@@ -22,7 +22,7 @@
 // LEDs 2812
 #define WSLED 47
 
-
+extern int nodeCount;
 
 
 
