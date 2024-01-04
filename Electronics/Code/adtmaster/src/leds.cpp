@@ -3,8 +3,9 @@ CRGB leds[NUM_LEDS];
 void setupLEDs()
 {
 
-    FastLED.addLeds<WS2812B, WSLED, COLOR_ORDER>(leds, NUM_LEDS).setCorrection(TypicalLEDStrip);
-    FastLED.setBrightness(1);
+    // FastLED.addLeds<WS2812B, WSLED, COLOR_ORDER>(leds, NUM_LEDS).setCorrection(TypicalLEDStrip);
+   FastLED.addLeds<WS2812B, LED, COLOR_ORDER>(leds, NUM_LEDS).setCorrection(TypicalLEDStrip);
+    FastLED.setBrightness(255);
     FastLED.clear();
     FastLED.show();
 

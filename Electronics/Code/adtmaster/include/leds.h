@@ -4,7 +4,7 @@
 
 #define LED_TYPE WS2812B
 #define COLOR_ORDER RGB
-#define NUM_LEDS 1
+#define NUM_LEDS 10
 
 void setupLEDs();
 

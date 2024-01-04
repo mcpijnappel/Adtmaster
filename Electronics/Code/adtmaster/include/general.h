@@ -1,5 +1,6 @@
 #pragma once 
-
+#include <SPI.h>
+#include <pgmspace.h>
 // SD card
 
 // Screen
@@ -12,6 +13,7 @@
 #define SCREEN_RESET 6
 #define SCREEN_BL 9 
 
+
 // Beer detector
 #define LOADCELL_DOUT_PIN 16
 #define LOADCELL_SCK_PIN 17  
@@ -21,6 +23,7 @@
 
 // LEDs 2812
 #define WSLED 47
+#define LED 5
 
 
 
