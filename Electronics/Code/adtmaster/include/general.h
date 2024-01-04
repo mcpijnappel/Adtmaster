@@ -25,7 +25,7 @@
 #define WSLED 47
 #define LED 5
 
-
+extern int nodeCount;
 
 
 
