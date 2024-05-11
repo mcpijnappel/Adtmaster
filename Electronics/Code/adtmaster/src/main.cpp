@@ -1,6 +1,5 @@
 #include <Arduino.h>
-#include "Activities/Activities.h"
-#include "Hardware/Hardware.h"
+#include "includes.h"
 
 Activity* currentActivity;
 //kevin was here
