@@ -4,11 +4,9 @@
 #include <SPI.h>
 #include "pins.h"
 
-
 class Display
 {
 private:
-    /* data */
     int contrast = 50;
     Adafruit_PCD8544 nokiaDisplay = Adafruit_PCD8544(DisplaySCLK, DisplayDIN, DisplayDC, DisplayCS, DisplayRST);
 
@@ -16,7 +14,7 @@ public:
     Display()
     {
         nokiaDisplay.begin();
-        nokiaDisplay.setContrast(contrast); // Set contrast to 50
+        nokiaDisplay.setContrast(contrast); // Set contrast
         nokiaDisplay.clearDisplay();
         nokiaDisplay.display();
     }
@@ -24,9 +22,14 @@ public:
     void text(int size, String s, int posX, int posY)
     {
         nokiaDisplay.setTextSize(size);
-        nokiaDisplay.clearDisplay();
+        nokiaDisplay.setTextColor(BLACK);
         nokiaDisplay.setCursor(posX, posY);
         nokiaDisplay.print(s);
         nokiaDisplay.display();
+    }
+
+    void clear()
+    {
+        nokiaDisplay.clearDisplay();
     }
 };

@@ -1,10 +1,10 @@
-#ifndef PINS
-#define PINS
+#ifndef PIN
+#define PIN
 
-int DisplaySCLK = 7;
-int DisplayDIN = 6;
-int DisplayDC = 5;
-int DisplayCS = 4;
-int DisplayRST = 3;
+const int DisplaySCLK = 7;
+const int DisplayDIN = 6;
+const int DisplayDC = 5;
+const int DisplayCS = 4;
+const int DisplayRST = 3;
 
 #endif
