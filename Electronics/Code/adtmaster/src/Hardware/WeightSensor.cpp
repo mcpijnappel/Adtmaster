@@ -1,4 +1,6 @@
 #include <Arduino.h>
+#include "pins.h"
+
 class WeightSensor
 {
 private:
@@ -33,7 +35,7 @@ public:
         return endTime - startTime;
     }
 
-    bool drinkingDone(){
+    bool isDrinkingDone(){
         return drinkingDone;
     }
 
