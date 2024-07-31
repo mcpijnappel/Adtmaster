@@ -9,10 +9,10 @@ private:
     byte numberOfLEDs;
     byte pin;
 public:
-    LedRing(byte NumberOfLEDS, byte Pin)
+    LedRing(byte NumberOfLEDS)
     {
         numberOfLEDs = NumberOfLEDS;
-        pin = Pin;
+        pin = LedDin;
     }
 
     void text(int size, String s, int posX, int posY)
